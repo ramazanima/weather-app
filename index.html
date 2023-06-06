@@ -5,14 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FA8BFF;
+            background-image: linear-gradient(45deg, hsl(297, 100%, 77%) 0%, #2BD2FF 52%, #2BFF88 90%);
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 80px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px hsla(0, 0%, 0%, 0.102);
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+        }
+
+        button[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 3px;
+            border: none;
+            background-color: #4CAF50;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .footer {
+            background-color: #fff;
+            padding: 10px;
+            text-align: center;
+            border-top: 1px solid #ccc;
+        }
+
+        .footer > p{
+            font-weight: bold;
+        }
+
+        .footer a{
+            font-size: small;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Weather App</h1>
-    <form action="/" method="post">
-        <label for="cityName">City Name: </label>
-    <input id="cityName" type="text" name="cityName">
-    <button type="submit">Submit</button>
-    </form>
-    
+
+    <div class="container">
+        <h1>Welcome to Weather App</h1>
+        <form action="/" method="post">
+            <label for="cityName">City Name: </label>
+            <input id="cityName" type="text" name="cityName">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>Created by Ali Ramazani</p>
+        <p>
+        <a href="https://www.linkedin.com/in/ramazanima/">LinkedIn</a>
+        <a href="https://github.com/ramazanima">Github</a>
+        </p>
+        <div>
+        </div>
+    </div>
+
 </body>
 </html>
